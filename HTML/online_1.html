@@ -1,0 +1,48 @@
+
+<form id="loginForm">
+  <input type="text" id="username" placeholder="Username" required>
+  <input type="password" id="password" placeholder="Password" required>
+  <input type="submit" value="Login">
+<!--  <p id="error-message"></p>-->
+</form>
+
+
+<script>
+  //JavaScript to show error message
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  var username = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
+  
+  if (!username || !password) {
+    // Prevent form submission
+    event.preventDefault();
+    // Show error message
+    document.getElementById('error-message').textContent = 'Please fill out both fields.';
+  }
+});
+
+// Additional JavaScript to show error when user stops typing
+//var typingTimer;                
+//var doneTypingInterval = 1000;  // Time in ms (1 second)
+//var usernameInput = document.getElementById('username');
+//var passwordInput = document.getElementById('password');
+
+// On keyup, start the countdown
+/*usernameInput.addEventListener('keyup', function() {
+  clearTimeout(typingTimer);
+  typingTimer = setTimeout(doneTyping, doneTypingInterval);
+});
+
+passwordInput.addEventListener('keyup', function() {
+  clearTimeout(typingTimer);
+  typingTimer = setTimeout(doneTyping, doneTypingInterval);
+});
+
+// User is "finished typing," do something
+function doneTyping () {
+  if (!usernameInput.value || !passwordInput.value) {
+    document.getElementById('error-message').textContent = 'Please continue typing...';
+  }
+}*/
+  
+</script>

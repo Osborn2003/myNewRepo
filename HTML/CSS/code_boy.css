@@ -1,0 +1,140 @@
+*{
+  margin: 0%;
+  padding:0%;
+  box-sizing: border-box;
+}
+
+body{
+  background-: url("BAMBI_PROJECTS/1620606.png");
+}
+
+h1{
+  text-align: center;
+  font-family: Monospace;
+  font-style:oblique;
+  margin:1rem;
+}
+div{
+  border:2px solid #888;
+}
+
+div#head{
+  position:relative;
+  top:3rem;
+  width:15rem;
+  height:12rem;
+  border-radius:50%;
+  margin:0 auto;
+  background:#603909;
+}
+
+div.eyes{
+  margin:1.5rem;
+  padding:.5rem;
+  background: whitesmoke;
+  width:4rem;
+  height:5rem;
+  border-radius:50%;
+}
+
+div.eye_ball{
+  margin:0 auto;
+  position:absolute;
+  top:1.5rem;
+  background: green;
+  width:2.5rem;
+  height:2.5rem;
+  border-radius:50%;
+}
+
+div #f_eye{
+  position:relative;
+  bottom:rem;
+  float:left;
+}
+
+div#s_eye{
+  position:relative;
+  bottom:rem;
+  float:right;
+}
+
+#s_eye .eye_ball .iris{ 
+  width:30%;
+  height:30%;
+  background: black;
+  border:none;
+  border-radius:inherit;
+  margin:35%;
+}
+
+#f_eye .eye_ball .iris{ 
+  width:30%;
+  height:30%;
+  background: black;
+  border:none;
+  border-radius:inherit;
+  margin:35%;
+
+}
+
+div#nose{
+  background:pink;
+  padding-top:1%;
+  margin:45%;
+  position:absolute;
+  width:10%;
+  height:7%;
+  border-radius:50%;
+}
+
+div.nostril{
+  background: #000;
+  border:none;
+  border-radius:inherit;
+  margin:10%;
+  height:30%;
+  width:30%;
+}
+
+#nose #nostril_1{
+  float:left;
+}
+#nose #nostril_2{
+  float:right;
+}
+
+div#body{
+  border-radius:50%;
+  margin:0 auto;
+  background:#000;
+  width:16rem;
+  height:17rem;
+  padding:1rem;
+}
+
+textarea{
+  padding:1rem;
+  margin:22% 0% 20% 16%;
+  line-height: 1.5rem;
+  color:green;
+  background: black;
+  text-align-last: center;
+  font-family: Monospace;
+  border:2px solid green;
+  border-radius:1rem;
+  width: 70%;
+  height:60%;
+}
+  
+input:hover{
+  outline:none;
+  background:green;
+}
+
+/*div #crown{
+  height:70px;
+  width:50%;
+  border-radius:50%;
+  border:2px solid gold;
+}

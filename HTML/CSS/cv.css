@@ -1,0 +1,58 @@
+*{
+  margin:0%;
+  padding:0%;
+  box-shadow: border-box;
+}
+
+body{
+  font-family:Sans-Serif;
+  font-size:1.3rem;
+}
+
+h2, h3{
+  text-align:center;
+  text-decoration:underline;
+  margin-top:1.5rem;
+}
+
+table#personal_d{
+  table-layout: fixed;
+  margin:0 auto;
+  width:85%;
+}
+
+table#schooling, table#work_exp{
+  table-layout:fixed;
+  margin:3rem auto;
+  width:85%;
+  border:2px solid black;
+  border-collapse: collapse;
+}
+
+.sch{
+  border:2px solid black;
+}
+
+
+
+td{ 
+  padding:.5rem;
+}
+
+td.dtitle{
+  font-weight:750;
+}
+
+p{
+  text-align: center;
+}
+
+.name{
+  margin-top:1rem;
+  font-weight:700;
+}
+
+p.name1{
+  margin-top:0%;
+  font-weight:700;
+}

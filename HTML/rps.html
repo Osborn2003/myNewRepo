@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+       <link rel = "stylesheet" href = "CSS/rps.css">
+  </head>
+  
+  <body>
+    <section id = "main">
+       <div id = "cont_el">
+         <h2>Rock, Paper, Scissors Game.</h2>
+         <fieldset>
+           <legend>Computer</legend>
+             <p color = "green">Computer Chooses =>  <span id = "result_el" ></span></p>
+         </fieldset>
+       </div>
+    
+       <div id = "btns">
+         <!--<select id = "choices_" sample>
+           <option value = "rock">Rock</option>
+           <option value = "paper">Paper</option>
+           <option value = "scissors">Scissors</option>
+         </select> -->
+            <button id = "rock_btn" onclick = "p_ChoiceRock()" value = "rock">Rock</button>
+            <button id = "paper_btn" onclick = "p_ChoicePaper()">Paper</button>
+            <button id = "scissors_btn" onclick = "p_ChoiceScissors()">Scissors</button> 
+          <!--  <button onclick = "mk_choice(0, 3)">PLAY</button>-->
+       </div>
+    </section>
+     
+    <script src = "JAVASCRIPT/rps.js"></script>
+  </body>
+</html>

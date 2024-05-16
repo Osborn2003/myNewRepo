@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  background:#999;
+  flex-flow: column nowrap;
+}
+
+button{
+  height:50px;
+  width:100px;
+  margin:1rem;
+  padding:.5rem;
+  border:5px solid #e86d0c;
+  border-radius:1rem;
+  font-weight: 1000;
+  font-size:1.3rem;
+  color:#e86d0c;
+}
+
+span{
+  border-bottom:2px solid black;
+  margin:.5rem;
+  font-weight: 700;
+  font-size:1.5rem;
+}

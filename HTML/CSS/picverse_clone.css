@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  --color1: rgb(93,93,93);
+  --color2: rgb(66,66,66);
+  --color3: rgb(221,111,20);
+  background: var(--color1);
+}
+.header {
+  background: var(--color2);
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  position: relative;
+  min-height: 40px;
+}
+.header #logo {
+  display: inline-block;
+  position: absolute;
+  left:5%;
+}
+.header #label_for_open {
+  display:none;
+  position: absolute;
+  right:10%;
+}
+#check{display:none;}
+.header #open_bar,
+.header #open_bar::before,
+.header #open_bar::after{
+  display:block;
+  background:var(--color3);
+  width:2rem;
+  height:2px;
+}
+.header #open_bar::before,
+.header #open_bar::after {
+  content:" ";
+  background:var(--color3);
+  position: absolute;
+}
+.header #open_bar::before{bottom:7px;}
+.header #open_bar::after{top:7px;}
+
+.header .nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 5%;
+}
+.nav .li {
+  text-align: center;
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--color1);
+  text-transform: uppercase;
+}
+@media (max-width:600px) {
+  .header .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:-100vh;
+    border-radius:1rem;
+    right:2%;
+    margin-top:2%;
+    width:50%;
+    height:auto;
+    background: var(--color2);
+    transition: .5s ease-in-out;
+    z-index: -1;
+  }
+.nav .li{
+  text-align: center;
+  width:100%;
+  line-height: 3.5rem;
+}
+
+.nav .li:active {highlight:none;}
+.nav .li:hover {
+  display: block;
+  background:var(--color3);
+  min-height: 3.5rem;
+  color: #000;
+  line-height: 3.5rem;
+}
+.nav .li:first-child:hover,
+.nav .li:first-child:active {
+  border-radius:1rem 1rem 0 0 ;
+}
+.nav .li:last-child:hover,
+.nav .li:last-child:active{
+  border-radius:0 0 1rem 1rem;
+}
+.header #label_for_open { 
+    display:inline-block;
+    position: absolute;
+    right:10%;
+  }
+  #check:checked ~ .nav{top:100%;}
+ /*#check:checked ~ #open_bar:before {
+    transform: rotate(60deg);
+  } */
+}

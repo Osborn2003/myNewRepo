@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Saira+Extra+Condensed:wght@500&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+header{
+  position: fixed;
+  width:100%;
+  height:auto;
+  top:0%;
+  background:#905300;
+  font-family: 'Roboto Slab', serif;
+  text-align:center;
+}
+
+body{
+  background:bisque;
+}
+
+.container{
+  display:flex;
+  flex-flow: column wrap;
+  margin:5rem auto 1rem auto;
+  padding:2rem;
+  background:whitesmoke;
+  max-width:70%;
+  max-height:auto;
+  border-radius: 2rem;
+  font-family: Monospace;
+}
+
+#welcome{
+  padding:0 1rem 1rem 1rem;
+  font-weight:800px;
+  font-family: 'Dancing Script', cursive;
+  margin:0 auto;
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.input{
+  margin: .5rem;
+}
+
+#log_form{
+  /*right:10%;
+  margin:0 auto;*/
+  padding:1rem;
+  max-width: 17.7rem;
+  background: whitesmoke;
+}
+
+label{
+  /*margin:0;
+  position:absolute;*/
+  top:.6rem;
+  left:.8rem;
+  background:whitesmoke;
+}
+input{
+  /*display: inline-block;*/
+  /*border:none;*/
+  border:2px solid gray;
+  border-radius: 5px;
+  padding: 1rem;
+  height:2rem;
+  width:100%;
+}
+
+p{
+  text-align: center;
+  padding:1rem;
+}
+
+#none{
+  /*display:inline-block;*/
+  border:4px solid bisque;*/
+  border-radius: 1rem;
+  /*background: black;*/
+  color:/*whitesmoke*/black;
+}
+
+#_button{
+  color:black;
+  max-height:3rem;
+  max-width: 8rem;
+  border:1.5px solid bisque;
+  border-radius: 1rem;
+  padding:.6rem;
+  display:block;
+  font-weight:;
+  text-decoration:none;
+}
+
+#_button:hover,
+#_button:focus{
+  text-decoration:underline;
+  background: navy;
+  color:whitesmoke;
+  padding:.6rem;
+}
+
+footer{
+  color:whitesmoke;
+  position:fixed;
+  width:100%;
+  height:auto;
+  bottom:0%;
+  background: #0d0643;
+  margin:0;
+}
+
+div#banner{
+  height:100px;
+  width:200px;
+  border:2px solid black;
+}
+
+input:disabled{
+  background:black;
+  align-content: ;
+}

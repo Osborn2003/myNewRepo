@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <style type = "text/css">
+      *{
+        box-sizing: border-box;
+      }
+      div {
+        margin:1rem auto;
+        color: white;
+        text-align: center;
+        line-height: 2.5rem;
+        padding: 5rem;
+        background: red;
+        width : 300px;
+        height : 300px;
+        border:7px solid navy;
+        border-radius:0px 0 100% 100%;
+      }
+      
+    </style>
+  </head>
+  <body>
+      <div onclick = "changeCOLOR(this)" style = "bacground-color = red">Tap to change color...</div>
+    
+      <div id = "div_1" onclick = "hello()">Hello World</div>
+    
+    
+    
+  <script type = "text/javascript">
+      
+      let myOBJECT = {
+        fname : "Osborn",
+        lname : "Prime",
+        fullName : function() {
+          return this.fname + " " + this.lname;
+        }
+      }
+      
+      console.log(myOBJECT.fullName())
+      
+       function changeCOLOR(element) {
+          let nowCOLOR = element.style.backgroundColor;
+          let nowBORDER = element.style.borderColor;
+          
+          if (nowCOLOR === "red" || nowBORDER === "navy") {
+            element.style.backgroundColor = "navy";
+            element.style.borderColor = "red";
+          } else {
+            element.style.backgroundColor = "red";
+            element.style.borderColor = "navy";
+          }
+        }
+      function hello() {
+          document.getElementById("div_1").innerHTML = "Hello Everyone";
+        }
+        
+        const user = window.prompt("What's your name?", "Answer");
+       
+        const num = user; window.alert(num);
+        
+      
+        let element = document.createElement("div");
+        element.textContent = num;
+        document.body.appendChild(element);
+        
+        let confirm = window.confirm("Are you sure");
+        
+        if (confirm === true){
+          element.textContent += " = True";
+          console.log(confirm);
+        }
+        const canvas = document.createElement("canvas");
+        canvas.width = 500;
+        canvas.height = 250;
+       
+        
+        let ctx = canvas.getContext("2d");
+        
+        ctx.font = "30px monospace";
+        ctx.fillText("Hello Osborn2.0", 50, 50);
+        document.body.appendChild(canvas);
+        
+        const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        svg.width = 500;
+        svg.height = 50;
+        
+        let text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        text.setAttribute("x", "-20"); 
+        text.setAttribute("y", "50");
+        text.style.fontFamily = "Times New Roman";
+        text.style.fontSize = "50";
+        
+        text.textContent = "Hello Osborn2.0";
+        
+        svg.appendChild(text);
+        document.body.appendChild(svg);
+        
+        
+        let employee = {
+          firstname : "John",
+          lastname : "Darenger",
+          course : "Computer Science",
+          fullName : function() {
+            return this.firstname + " " + this.lastname;
+          }
+        }
+        console.log(employee.fullName());
+        console.log(typeof null)
+       // console.log(typeof )
+        
+        let lol = undefined
+        console.log(lol)
+        lol = "Hello Osborn2.0"
+        console.log("%cHello Osborn2.0", "color : red; font-size : 3rem;" )
+        
+        
+        
+      </script>
+  </body>
+  
+  
+
+</html>

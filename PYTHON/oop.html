@@ -1,0 +1,24 @@
+<style>
+  p {
+    color:#ff0000;
+  }
+</style>
+
+
+<div>
+  <h1 id="paragraph" class="paragraph">JavaScript</h1> <button onclick="Function()">Click Me</button>
+</div>
+
+<script>
+  let age = window.prompt('How old are you?');
+  
+  function Function() {
+    if (age <= 18) {
+        let newElement = document.createElement('p');
+        newElement.textContent = "Hello, we learn JavaScript";
+        document.body.appendChild(newElement);
+    }else{
+        window.alert("None")
+    }
+  }
+</script>

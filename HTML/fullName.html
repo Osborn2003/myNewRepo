@@ -1,0 +1,44 @@
+<!--<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name= "viewport", content = "width = device-width, initial-scale = 1.0">
+    <title>Password Checker</title>
+  </head>
+  <body>
+    <h1>Enter Password (demo)</h1>
+  </body>
+  <p id = "c_passwd"></p>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function showInput() {
+  // get the input element by its id
+  var input = document.getElementById("userInput");
+  // get the value of the input element
+  var value = input.value;
+  // display the value in an alert box
+  alert("You entered: " + value);
+}
+</script>
+</head>
+<body>
+<h1>How to get user input with JavaScript</h1>
+<p>Enter some text in the input field below and click the button.</p>
+<input type="text" id="userInput" placeholder="Enter some text here">
+<button onclick="showInput()">Show Input</button>
+
+<br><br>
+
+<div id = "inputAge_cont">
+  <input type = "number" id = "inputAge" placeholder = "Enter Age Here">
+  <button onclick = "readAge()" id = "readAge">Submit</button>
+</div>
+
+<script src = "JAVASCRIPT/fullname.js"></script>
+
+</body>
+</html>

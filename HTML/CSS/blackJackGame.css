@@ -1,0 +1,39 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  padding:1rem;
+  background:green;
+  text-align: center;
+}
+
+h1 {
+  margin: 1.5rem;
+  color:goldenrod;
+}
+
+p{
+  margin:1.5rem;
+  font-weight:800;
+  color:whitesmoke;
+  
+}
+
+p#message_el {
+  font-style: italic;
+}
+
+button {
+  margin-bottom:4px;
+  border-radius: 5px;
+  border:none;
+  background: goldenrod;
+  color : green;
+  font-weight:1000;
+  width : 150px;
+  font-size: 1.2rem;
+  padding:.5rem;
+}
